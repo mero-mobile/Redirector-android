@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bhagya.mapapplication">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <application android:name="android.support.multidex.MultiDexApplication">
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MeroMobile"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat" >
+        <receiver
+            android:name=".read_Incomingsms"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+
+            <receiver android:name=".IncomingCall">
+                <intent-filter>
+                    <action android:name="android.intent.action.PHONE_STATE" />
+                </intent-filter>
+            </receiver>
+        </receiver>
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".sms_send_recieve" />
+        <activity android:name=".selectActivity" />
+        <activity android:name=".Readmobile_Inbox" />
+        <activity android:name=".ReadContactList" />
+        <activity android:name=".JsonParsingActivity" />
+        <activity android:name=".readWebdata" />
+        <activity android:name=".Turnon_onwifi" />
+        <activity android:name=".locationListner" />
+        <activity android:name=".listgpslocation" />
+        <activity android:name=".readWebContact" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="My Phone Location" />
+        <activity android:name=".Newincoming_callrecieve" />
+        <activity
+            android:name=".homePage"
+            android:label="Mero Mobile" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Mero Mobile Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateNewUserActivity" />
+        <activity android:name=".BackiupActivity" />
+
+        <service
+            android:name=".contact_reciever"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Postdata" />
+        <activity android:name=".Readoutbox" />
+        <activity android:name=".readWebInbox" />
+        <activity android:name=".readWeboutbox" />
+        <activity android:name=".PullWebdata" />
+        <activity android:name=".HomeAutomateActivity" />
+        <activity android:name=".MasterActivity" />
+        <activity android:name=".sendsmsRemotly" />
+        <activity android:name=".subSelectActivity" />
+        <activity android:name=".AnswerQuestion1" />
+        <activity android:name=".insertAnsQsn1" />
+        <activity android:name=".MultiPlayerActivity" />
+        <activity android:name=".new_AnswerQuestions" />
+        <activity android:name=".ShowLocation" />
+        <activity android:name=".Facebook" />
+
+        <service android:name=".MYfirebaseInstentidservice">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Myfirebasemessagingservice">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Fcm_mainActivity" />
+        <activity android:name=".read_calloges" />
+    </application>
+
+</manifest>

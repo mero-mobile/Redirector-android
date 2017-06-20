@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#000"
+    android:gravity="center"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView android:id="@+id/phoneno"
+    android:textColor="#fff"
+    android:text="jfajlfla"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <TextView android:id="@+id/sms"
+        android:textColor="#fff"
+        android:text="afjalkdjf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button android:id="@+id/reply"
+        android:background="@drawable/ans_question_background"
+        android:layout_width="50dp"
+        android:textSize="10dp"
+        android:text="Reply"
+        android:layout_marginLeft="120dp"
+
+        android:textColor="#fff"
+
+        android:layout_height="20dp" />
+</LinearLayout>

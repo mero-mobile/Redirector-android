@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:id="@+id/ansqsnpage">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/Lifeline"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:background="@drawable/timmer_background"
+                            android:id="@+id/timmer"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="30dp"
+                            android:text="30"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp" />
+                        <Button android:id="@+id/pass"
+                            android:gravity="center"
+                            android:drawableBottom="@drawable/pass"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:text="Pass"
+                            android:layout_marginTop="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/timmer"
+                            android:background="@drawable/ans_question_background"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView android:text="0"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:textStyle="italic"
+                            android:id="@+id/p1score"
+                            android:background="@drawable/multiscore_backgraoud"
+                            android:layout_marginLeft="75dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                        <TextView android:id="@+id/p1"
+                            android:layout_marginLeft="60dp"
+                            android:layout_below="@id/p1score"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:textSize="20dp"
+                            android:text="P.1"
+                            android:gravity="center"
+
+                            android:background="@drawable/ans_question_background"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            />
+                        <TextView android:text="0"
+                            android:layout_toRightOf="@id/timmer"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:textStyle="italic"
+                            android:id="@+id/p2score"
+                            android:background="@drawable/multiscore_backgraoud"
+                            android:layout_marginLeft="155dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                        <TextView android:id="@+id/p2"
+                            android:layout_toRightOf="@id/timmer"
+                            android:layout_marginLeft="140dp"
+                            android:layout_below="@id/p1score"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:textSize="20dp"
+                            android:text="P.2"
+                            android:gravity="center"
+
+                            android:background="@drawable/ans_question_background"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/question"
+
+                        style="@style/ansQuestion_style"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ans_question_background"
+                        android:layout_marginTop="20dp"
+
+                        android:text="Which is the capital of Nepal?"
+                        android:layout_width="match_parent"
+                        />
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView android:id="@+id/ans_a"
+                            style="@style/ansQuestion_style"
+                            android:text="A.Kathmandu"
+
+                            android:layout_marginRight="10dp"
+                            />
+                        <TextView android:id="@+id/ans_b"
+
+                            style="@style/ansQuestion_style"
+                            android:layout_marginRight="10dp"
+                            android:text="B.Pokhara"
+                            />
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView android:id="@+id/ans_c"
+
+                            style="@style/ansQuestion_style"
+                            android:layout_marginRight="10dp"
+                            android:text="C.Kathmandu"
+                            />
+                        <TextView
+                            style="@style/ansQuestion_style"
+                            android:id="@+id/ans_d"
+
+                            android:layout_marginRight="10dp"
+                            android:text="D.Pokhara"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

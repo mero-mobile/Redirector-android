@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_master"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#000"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bhagya.mapapplication.MasterActivity">
+<Button
+    android:layout_marginTop="30dp"
+    android:text="Find Phone"
+    android:textColor="#fff"
+    android:gravity="center"
+    android:id="@+id/gpslocation"
+    android:background="@drawable/ans_question_background"
+    android:layout_width="200dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@id/gpslocation"
+        android:layout_marginTop="30dp"
+        android:text="Ring My Phone"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/Ringphone"
+        android:background="@drawable/ans_question_background"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@id/Ringphone"
+        android:layout_marginTop="30dp"
+        android:text="Shutdown My phone"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/Shutdown"
+        android:background="@drawable/ans_question_background"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_below="@id/Shutdown"
+        android:layout_marginTop="30dp"
+        android:text="Turn On Wifi"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/turnonwifi"
+        android:background="@drawable/ans_question_background"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@id/turnonwifi"
+        android:layout_marginTop="30dp"
+        android:text="Get Location Offline"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/getlocation"
+        android:background="@drawable/ans_question_background"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

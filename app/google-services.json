@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "450867226466",
+    "firebase_url": "https://meromobile-43279.firebaseio.com",
+    "project_id": "meromobile-43279",
+    "storage_bucket": "meromobile-43279.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450867226466:android:70e3b0d6c1baea5b",
+        "android_client_info": {
+          "package_name": "com.bhagya.mapapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450867226466-f2i9nqdkmjkg0gq1ukn79d1kdf7pmfac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3jzkZKrxTjnf5pNd6sJmTiC0LfuUaSx4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

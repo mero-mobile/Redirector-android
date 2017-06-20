@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout
+    android:gravity="center"
+android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <TextView
+
+       android:textStyle="bold"
+       android:layout_marginLeft="0dp"
+       android:textSize="20dp"
+       android:textColor="#fff"
+       android:text="SELECT MODE"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/easy"
+        android:layout_marginLeft="0dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_forward_black_24dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="EASY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView android:id="@+id/medium"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_forward_black_24dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="MEDIUM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView android:id="@+id/admin"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_forward_black_24dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="ADMIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/exit"
+        android:layout_marginLeft="0dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_forward_black_24dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="EXIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+</LinearLayout>

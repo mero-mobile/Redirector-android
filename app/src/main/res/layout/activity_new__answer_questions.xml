@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:id="@+id/ansqsnpage">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:text="Level-1"
+
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/Lifeline"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:background="@drawable/timmer_background"
+                            android:id="@+id/timmer"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="30dp"
+                            android:text="30"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp" />
+                        <Button  android:id="@+id/takjhak"
+                            android:layout_toLeftOf="@id/timmer"
+                            android:background="@drawable/btn_selector"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:text="TAKJHAK"
+                            android:textSize="15dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <Button  android:id="@+id/bachao"
+                            android:layout_toRightOf="@id/timmer"
+                            android:background="@drawable/btn_selector"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:text="BACHAO"
+                            android:textSize="15dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <Button  android:id="@+id/copy"
+                            android:layout_toRightOf="@id/bachao"
+                            android:background="@drawable/btn_selector"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:text="COPY"
+                            android:textSize="15dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <Button android:id="@+id/fifty50"
+                            android:layout_toLeftOf="@id/takjhak"
+                            android:background="@drawable/btn_selector"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:text="50:50"
+                            android:textSize="15dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/question"
+                        android:visibility="gone"
+                        style="@style/ansQuestion_style"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ans_question_background"
+                        android:layout_marginTop="20dp"
+
+                        android:text="Which is the capital of Nepal?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView android:id="@+id/ans_a"
+                            style="@style/ansQuestion_style"
+                            android:text="A.Kathmandu"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                        <TextView android:id="@+id/ans_b"
+                            android:visibility="gone"
+                            style="@style/ansQuestion_style"
+                            android:layout_marginRight="10dp"
+                            android:text="B.Pokhara"
+                            />
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView android:id="@+id/ans_c"
+                            android:visibility="gone"
+                            style="@style/ansQuestion_style"
+                            android:layout_marginRight="10dp"
+                            android:text="C.Kathmandu"
+                            />
+                        <TextView
+                            style="@style/ansQuestion_style"
+                            android:id="@+id/ans_d"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:text="D.Pokhara"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@+id/line"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/login">
+                </View>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView android:id="@+id/crore_3"
+
+                        android:text="Rs-5 Crore"
+                        style="@style/text_style"
+                        android:textColor="#EEFF41"
+                        />
+                    <TextView android:id="@+id/crore_2"
+                        android:text="Rs-2 Crore"
+                        style="@style/text_style"
+                        />
+                    <TextView android:id="@+id/crore_1"
+                        android:text="Rs-1 Crore"
+                        android:textColor="#76FF03"
+                        style="@style/text_style"
+                        />
+                    <TextView android:id="@+id/lakh_50"
+                        android:text="Rs-50 lakh"
+
+                        style="@style/text_style"
+
+                        />
+                    <TextView android:id="@+id/lakh_40"
+                        android:text="Rs-40 lakh"
+                        style="@style/text_style"
+
+                        />
+                    <TextView android:id="@+id/lakh_30"
+                        android:text="Rs-30 lakh"
+                        android:textColor="#76FF03"
+                        style="@style/text_style"
+
+                        />
+                    <TextView android:id="@+id/lakh_20"
+                        android:text="Rs-20 lakh"
+                        style="@style/text_style"
+                        />
+                    <TextView android:id="@+id/lakh_10"
+                        android:text="Rs-10 lakh"
+                        style="@style/text_style"
+                        />
+                    <TextView android:id="@+id/lakh_5"
+                        android:text="Rs-5 lakh"
+                        android:textColor="#76FF03"
+                        style="@style/text_style"
+
+                        />
+                    <TextView android:id="@+id/lakh_4"
+                        android:text="Rs-4 lakh"
+                        style="@style/text_style"
+
+                        />
+                    <TextView android:id="@+id/lakh_3"
+                        android:text="Rs-3 lakh"
+                        style="@style/text_style"
+                        />
+                    <TextView android:id="@+id/lakh_2"
+                        android:text="Rs-2 lakh"
+                        style="@style/text_style"
+                        />
+                    <TextView android:id="@+id/lakh_1"
+                        android:textColor="#76FF03"
+                        android:text="Rs-1 lakh"
+                        style="@style/text_style"
+                        />
+                    <TextView android:id="@+id/thousand50"
+                        android:text="Rs-50 k"
+                        style="@style/text_style"
+                        />
+                    <TextView android:id="@+id/thousand20"
+                        android:text="Rs-20 K"
+                        style="@style/text_style"
+                        />
+                    <TextView android:id="@+id/thousand10"
+
+                        android:text="Rs-10 K"
+                        style="@style/text_style"
+                        />
+                    <View android:id="@+id/line1"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#fff"
+                        android:layout_marginTop="0dp"
+                        >
+
+                    </View>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+android:background="#607D8B"
+    android:id="@+id/activity_insert_ans_qsn1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="#607D8B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:textSize="20dp"
+          android:textColor="#fff"
+          android:text="Enter The Question"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+        <EditText android:id="@+id/question"
+            android:layout_margin="5dp"
+            android:hint="Enter Question Here..."
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="Enter The Option A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText android:id="@+id/optA"
+            android:layout_margin="5dp"
+            android:hint="Enter Option A Here..."
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+      <TextView
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Enter The Option B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <EditText android:id="@+id/optB"
+            android:layout_margin="5dp"
+            android:hint="Enter Option B Here..."
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Enter The Option C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <EditText android:id="@+id/optC"
+            android:layout_margin="5dp"
+            android:hint="Enter Option C Here..."
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Enter The Option D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <EditText android:id="@+id/optD"
+            android:layout_margin="5dp"
+            android:hint="Enter option D Here..."
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Correct ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <EditText android:id="@+id/correctans"
+            android:layout_margin="5dp"
+            android:hint="Enter correct ans Here..."
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+<Button
+        android:id="@+id/submit"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:text="Submit"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

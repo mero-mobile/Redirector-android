@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MapApplication</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="FCM_PREP">com.bhagya.mapapplication.fcm_pref</string>
+    <string name="FCM_TOKEN">com.bhagya.mapapplication.fcm_token</string>
+
+</resources>

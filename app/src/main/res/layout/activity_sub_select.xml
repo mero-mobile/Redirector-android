@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_sub_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView android:id="@+id/pencil1"
+        android:layout_gravity="center"
+        android:src="@mipmap/pencil14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+    <Button android:id="@+id/gk"
+android:visibility="gone"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:drawableRight="@mipmap/nepalindia"
+        android:text="English "
+        android:paddingLeft="23dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/btn_selector"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+    <Button android:id="@+id/science"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:visibility="gone"
+       android:drawableRight="@mipmap/nepaliflag"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:text="NEpali"
+        android:background="@drawable/btn_selector"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+    <Button android:id="@+id/math"
+        android:drawableRight="@mipmap/indiaflag"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:text="Hindi "
+        android:background="@drawable/btn_selector"
+        android:layout_width="180dp"
+        android:gravity="center"
+        android:paddingRight="15dp"
+        android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/pencil3"
+        android:visibility="gone"
+
+        android:layout_gravity="center"
+        android:src="@mipmap/pencil5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_automate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#000"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bhagya.mapapplication.HomeAutomateActivity">
+    <ImageView android:id="@+id/doorimage"
+        android:src="@mipmap/doorclose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<Button android:id="@+id/dooropen"
+    android:background="@drawable/ans_question_background"
+    android:text="Door Open"
+    android:layout_toRightOf="@id/doorimage"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content" />
+    <Button android:id="@+id/doorclosed"
+        android:layout_below="@id/dooropen"
+        android:background="@drawable/ans_question_background"
+        android:text="Door Close"
+        android:layout_toRightOf="@id/doorimage"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <ImageView  android:id="@+id/bulbimage"
+        android:layout_below="@id/doorimage"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ofbulb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button android:id="@+id/turnon"
+
+        android:background="@drawable/ans_question_background"
+        android:text=" Turn ON"
+        android:layout_toRightOf="@id/doorimage"
+        android:layout_below="@id/doorimage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <Button android:id="@+id/turnof"
+
+        android:layout_below="@id/turnon"
+        android:background="@drawable/ans_question_background"
+        android:text="Turn OFF"
+        android:layout_toRightOf="@id/doorimage"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:fillAfter="true" android:duration="1500" xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale android:fromXScale="0.1" android:toXScale="1"
+        android:fromYScale="0.1" android:toYScale="1" android:pivotX="50%" android:pivotY="50%"></scale>
+    <rotate
+        android:pivotY="50%"
+        android:pivotX="50%"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        ></rotate>
+<translate
+    android:fromXDelta="0%" android:fromYDelta="0%" android:toXDelta="180%" android:toYDelta="80%"/>
+
+</set>

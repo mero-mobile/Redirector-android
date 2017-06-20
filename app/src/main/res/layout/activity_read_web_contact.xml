@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_read_web_contact"
+    android:background="#000"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    >
+    <ImageView android:id="@+id/contactimage"
+        android:background="@drawable/contact"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView android:id="@+id/conatactname"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/contactimage"
+        android:text="Bhagya Sah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<TextView android:id="@+id/contactNo"
+    android:text="9801074961"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dp"
+    android:layout_toRightOf="@id/contactimage"
+    android:layout_width="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_below="@id/conatactname"
+    android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/call"
+        android:background="@drawable/ic_phone_black_24dp"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@id/contactNo"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView android:background="@drawable/ic_chat_black_24dp"
+        android:layout_toRightOf="@id/call"
+       android:id="@+id/messege"
+        android:layout_below="@id/contactNo"
+        android:layout_marginLeft="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</RelativeLayout>
