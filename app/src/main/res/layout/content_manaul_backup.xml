@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bhagya.mapapplication.activityclass.ManaulBackupActivity"
+    tools:showIn="@layout/activity_manaul_backup">
+<LinearLayout
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    android:id="@+id/mainlayoutforbackup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/contactbackup_btn"
+        android:text="contacts"
+        android:layout_margin="10dp"
+        android:background="@drawable/ans_question_background"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/callhistory_btn"
+        android:text="Call History"
+        android:layout_margin="10dp"
+        android:background="@drawable/ans_question_background"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/smsbtn"
+        android:text="Message"
+        android:layout_margin="10dp"
+        android:background="@drawable/ans_question_background"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/smsoutbox_btn"
+        android:text="OUTBOX"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:background="@drawable/ans_question_background"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <TextView
+        android:id="@+id/backup_skip"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="SKIP"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

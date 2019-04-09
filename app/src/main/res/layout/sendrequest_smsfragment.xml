@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="turn on wifi"
+            android:id="@+id/tunonwifi_sms"
+            android:background="@drawable/ans_question_background"
+            android:layout_margin="10dp"
+            android:textColor="#FFF"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Ring Phone"
+            android:id="@+id/ringmyphone_sms"
+            android:background="@drawable/ans_question_background"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Find MY Phone"
+            android:background="@drawable/ans_question_background"
+            android:id="@+id/findmyphone_sms"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

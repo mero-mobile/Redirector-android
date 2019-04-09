@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bhagya.mapapplication.activityclass.SettingActivity"
+    tools:showIn="@layout/activity_setting">
+    <LinearLayout
+        android:background="@drawable/setting_background"
+        android:id="@+id/mob_registration_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView android:id="@+id/mobile_image"
+            app:srcCompat="@drawable/ic_phonelink_setup_black_24dp"
+            android:layout_below="@id/contactNo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    <TextView android:id="@+id/mobile_registrationsetting"
+        android:text="Mobile Registration"
+        android:textColor="#fff"
+        android:layout_weight="1"
+        android:layout_marginTop="7dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/setting_background"
+        android:id="@+id/manualbakup_layout"
+        android:layout_below="@+id/mob_registration_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView android:id="@+id/manual_backup"
+            app:srcCompat="@drawable/ic_backup_white_24dp"
+            android:layout_below="@id/contactNo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView android:id="@+id/manualbakup"
+            android:text="Manual Backup"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/setting_background"
+        android:id="@+id/auto_backup"
+        android:layout_below="@+id/manualbakup_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/autobakup_image"
+            app:srcCompat="@drawable/ic_cloud_done_black_24dp"
+            android:layout_below="@id/contactNo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView android:id="@+id/autobackup_textview"
+            android:text="Auto Backup"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/setting_background"
+        android:id="@+id/remote_access_layout"
+        android:layout_below="@+id/auto_backup"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/remote_image"
+            app:srcCompat="@drawable/ic_settings_remote_white_24dp"
+            android:layout_below="@id/contactNo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView android:id="@+id/remote_textview"
+            android:text="Remote Access"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/setting_background"
+        android:id="@+id/friend_circle_layout"
+        android:layout_below="@+id/remote_access_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/fried_circlce_image"
+            app:srcCompat="@drawable/ic_person_add_black_24dp"
+            android:layout_below="@id/contactNo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView android:id="@+id/friend_circle_textview"
+            android:text="Create Friend Circle"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

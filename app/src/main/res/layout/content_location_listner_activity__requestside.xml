@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bhagya.mapapplication.activityclass.LocationListnerActivity_Requestside"
+    tools:showIn="@layout/activity_location_listner__requestside">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/gps_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Current GPS Loaction"
+        android:textSize="24sp"
+        android:textStyle="bold"
+    />
+
+    <ScrollView
+        android:background="#000"
+        android:id="@+id/mainscrollview"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gps_location"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+
+    <LinearLayout
+    android:id="@+id/mainlayoutforlocation"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+</LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ans_question_background"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Response via SMS"
+        android:id="@+id/response_sms"
+        android:layout_below="@id/mainscrollview"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:background="@drawable/ans_question_background"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Response via internet"
+        android:id="@+id/response_intenet"
+        android:layout_below="@id/response_sms"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+    <TextView android:id="@+id/locationhelp"
+        android:layout_margin="10dp"
+        android:text="Please Don't Resonse Until Your Current GPS Data Is Not Available! It Take More Time TO Response Your Partner\nGo Open Sky Area For a While!"
+        android:textStyle="italic"
+        android:textColor="#ecf40d"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

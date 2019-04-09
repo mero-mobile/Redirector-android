@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_read_web_contact"
-    android:background="#000"
+    android:background="#313131"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
     >
-    <ImageView android:id="@+id/contactimage"
-        android:background="@drawable/contact"
-
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/contactimage"
         android:layout_width="100dp"
+        app:srcCompat="@drawable/contact"
         android:layout_height="100dp" />
     <TextView android:id="@+id/conatactname"
         android:layout_marginTop="10dp"
@@ -31,17 +31,32 @@
     android:layout_marginTop="30dp"
     android:layout_below="@id/conatactname"
     android:layout_height="wrap_content" />
-    <ImageView android:id="@+id/call"
-        android:background="@drawable/ic_phone_black_24dp"
-        android:layout_marginLeft="200dp"
+    <LinearLayout
+        android:layout_alignParentRight="true"
         android:layout_below="@id/contactNo"
-        android:layout_width="50dp"
-        android:layout_height="50dp" />
-    <ImageView android:background="@drawable/ic_chat_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatImageView android:id="@+id/call"
+        app:srcCompat="@drawable/ic_phone_black_24dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/contactNo"
+        android:layout_marginRight="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <android.support.v7.widget.AppCompatImageView app:srcCompat="@drawable/ic_chat_black_24dp"
         android:layout_toRightOf="@id/call"
        android:id="@+id/messege"
         android:layout_below="@id/contactNo"
-        android:layout_marginLeft="40dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp" />
+        android:layout_marginRight="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <android.support.v7.widget.AppCompatImageView
+        app:srcCompat="@drawable/ic_my_location_black_24dp"
+        android:id="@+id/location"
+        android:layout_below="@id/contactNo"
+       android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    </LinearLayout>
 </RelativeLayout>

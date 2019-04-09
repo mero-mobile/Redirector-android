@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="Send Request Through......"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/btnlayout"
+        android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/btnlayout"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/internet"
+        android:text="INTERNET"
+        android:layout_margin="10dp"
+        android:background="@drawable/ans_question_background"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/sms"
+            android:text="sms"
+            android:layout_margin="10dp"
+            android:background="@drawable/ans_question_background"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

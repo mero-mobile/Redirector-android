@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bhagya.mapapplication.activityclass.UserWelcomeActivity"
+    tools:showIn="@layout/activity_user_welcome">
+    <TextView
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome To Mero Mobile"
+        android:id="@+id/loginUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<ImageView
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/remotelogin_ImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Name :"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/remotelogin_ImageView"
+        android:id="@+id/remotelogin_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Email :"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/remotelogin_username"
+        android:id="@+id/remotelogin_emailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="Phone No:"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/remotelogin_emailid"
+        android:id="@+id/remotelogin_phoneno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

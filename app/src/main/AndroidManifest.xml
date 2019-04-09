@@ -5,13 +5,15 @@
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the 'MyLocation' functionality. 
+         location permissions for the 'MyLocation' functionality.
     -->
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
@@ -19,17 +21,19 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application android:name="android.support.multidex.MultiDexApplication">
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="MeroMobile"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat" >
+
+        <!-- android:allowBackup="true" -->
+        <!-- android:icon="@mipmap/ic_launcher" -->
+        <!-- android:label="MeroMobile" -->
+        <!-- android:supportsRtl="true" -->
+
         <receiver
-            android:name=".read_Incomingsms"
+            android:name=".activityclass.read_Incomingsms"
             android:enabled="true"
             android:exported="true">
             <intent-filter android:priority="999">
@@ -42,76 +46,215 @@
                 </intent-filter>
             </receiver>
         </receiver>
+        <!-- <receiver android:name=".services.NetworkCheckedReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
 
-        <activity android:name=".MainActivity" />
-        <activity android:name=".sms_send_recieve" />
-        <activity android:name=".selectActivity" />
-        <activity android:name=".Readmobile_Inbox" />
-        <activity android:name=".ReadContactList" />
-        <activity android:name=".JsonParsingActivity" />
-        <activity android:name=".readWebdata" />
-        <activity android:name=".Turnon_onwifi" />
-        <activity android:name=".locationListner" />
-        <activity android:name=".listgpslocation" />
-        <activity android:name=".readWebContact" />
+        <activity android:name=".activityclass.MainActivity" />
+        <activity android:name=".activityclass.sms_send_recieve" />
+        <activity android:name=".activityclass.selectActivity" />
+        <activity android:name=".activityclass.Readmobile_Inbox" />
+        <activity android:name=".activityclass.ReadContactList" />
+        <activity android:name=".activityclass.JsonParsingActivity" />
+        <activity android:name=".activityclass.readWebdata" />
+        <activity android:name=".activityclass.locationListner" />
+        <activity android:name=".activityclass.readWebContact" />
+        <activity android:name=".activityclass.LocationOnOff_Similar_To_Google_Maps" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".activityclass.MapsActivity"
             android:label="My Phone Location" />
-        <activity android:name=".Newincoming_callrecieve" />
+        <activity android:name=".activityclass.Newincoming_callrecieve" />
         <activity
-            android:name=".homePage"
+            android:name=".activityclass.homePage"
             android:label="Mero Mobile" />
         <activity
-            android:name=".LoginActivity"
-            android:label="Mero Mobile Login">
+            android:name=".activityclass.LoginActivity"
+            android:label="Redirector">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreateNewUserActivity" />
-        <activity android:name=".BackiupActivity" />
+        <activity android:name=".activityclass.CreateNewUserActivity" />
+        <activity android:name=".activityclass.BackiupActivity" />
 
         <service
-            android:name=".contact_reciever"
+            android:name=".activityclass.contact_reciever"
             android:enabled="true"
             android:exported="true" />
-
-        <activity android:name=".Postdata" />
-        <activity android:name=".Readoutbox" />
-        <activity android:name=".readWebInbox" />
-        <activity android:name=".readWeboutbox" />
-        <activity android:name=".PullWebdata" />
-        <activity android:name=".HomeAutomateActivity" />
-        <activity android:name=".MasterActivity" />
-        <activity android:name=".sendsmsRemotly" />
-        <activity android:name=".subSelectActivity" />
-        <activity android:name=".AnswerQuestion1" />
-        <activity android:name=".insertAnsQsn1" />
-        <activity android:name=".MultiPlayerActivity" />
-        <activity android:name=".new_AnswerQuestions" />
-        <activity android:name=".ShowLocation" />
-        <activity android:name=".Facebook" />
-
-        <service android:name=".MYfirebaseInstentidservice">
+        <activity android:name=".activityclass.Postdata" />
+        <activity android:name=".activityclass.Readoutbox" />
+        <activity android:name=".activityclass.readWebInbox" />
+        <activity android:name=".activityclass.readWeboutbox" />
+        <activity android:name=".activityclass.PullWebdata" />
+        <activity android:name=".activityclass.sendsmsRemotly" />
+        <activity android:name=".activityclass.insertAnsQsn1" />
+        <activity android:name=".activityclass.new_AnswerQuestions" />
+        <activity android:name=".activityclass.MasterActivity" />
+        <service android:name=".activityclass.MYfirebaseInstentidservice">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".Myfirebasemessagingservice">
+        <service android:name=".activityclass.Myfirebasemessagingservice">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <activity android:name=".Fcm_mainActivity" />
-        <activity android:name=".read_calloges" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".activityclass.read_calloges" />
+        <activity android:name=".activityclass.UserProfile" />
+        <activity
+            android:name=".activityclass.MainUserHome"
+            android:label="Redirector"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activityclass.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activityclass.MainUserHome">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bhagya.mapapplication.activityclass.MainUserHome" />
+        </activity>
+        <activity
+            android:name=".activityclass.MainContactActivity"
+            android:label="Redirector"
+            android:parentActivityName=".activityclass.MainUserHome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bhagya.mapapplication.activityclass.MainUserHome" />
+        </activity>
+        <activity
+            android:name=".activityclass.MainSmsActivity"
+            android:label="@string/title_activity_main_sms"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activityclass.MainRemoteController_Activity"
+            android:label="@string/title_activity_main_remote_controller_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activityclass.RequestForLoacation" />
+        <activity android:name=".activityclass.MydailogueActivity" />
+        <activity android:name=".activityclass.Checkforlocation_smsActivity" />
+        <activity
+            android:name=".activityclass.RequestsenderActivity"
+            android:label="@string/title_activity_requestsender"
+            android:parentActivityName=".activityclass.MainUserHome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bhagya.mapapplication.activityclass.MainUserHome" />
+        </activity>
+        <activity
+            android:name=".activityclass.LocationListnerActivity_Requestside"
+            android:label="@string/title_activity_location_listner__requestside"
+            android:parentActivityName=".activityclass.MainUserHome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bhagya.mapapplication.activityclass.MainUserHome" />
+        </activity>
+        <activity
+            android:name=".activityclass.Mobile_NoRegisterActivity"
+            android:label="MeroMobile Registration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activityclass.ManaulBackupActivity"
+            android:label="@string/title_activity_manaul_backup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activityclass.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName=".activityclass.MainUserHome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bhagya.mapapplication.activityclass.MainUserHome" />
+        </activity>
+
+        <service
+            android:name=".services.socketTest"
+            android:exported="false" />
+        <service
+            android:name=".services.UploadContactInfoService"
+            android:exported="false" />
+        <service
+            android:name=".services.UpLoadCallHistory"
+            android:exported="false" />
+        <service
+            android:name=".services.UploadInboxService"
+            android:exported="false" />
+        <service
+            android:name=".services.UploadOutboxService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activityclass.AutoBackupActivity"
+            android:label="@string/title_activity_auto_backup"
+            android:parentActivityName=".activityclass.SettingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bhagya.mapapplication.activityclass.SettingActivity" />
+        </activity>
+
+        <receiver
+            android:name=".services.NetworkCheckedReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <action android:name="android.intent.action.CALL" />
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".services.CallReceiverBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.CheckAllUpdateForWebServices"
+            android:exported="false" />
+
+        <activity
+            android:name=".activityclass.UserWelcomeActivity"
+            android:label="@string/title_activity_user_welcome"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".jobschedular.JobschedulerForUpdateData"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name=".test.TestServer"
+            android:label="@string/title_activity_test_server"
+            android:parentActivityName=".activityclass.MainUserHome">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bhagya.mapapplication.activityclass.MainUserHome" />
+        </activity>
+
+        <service
+            android:name=".socket.IncomingMessageHandler"
+            android:exported="false"></service>
     </application>
 
 </manifest>

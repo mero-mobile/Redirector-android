@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bhagya.mapapplication.activityclass.RequestsenderActivityFragment"
+    tools:showIn="@layout/activity_requestsender">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/mainlayout1"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_marginBottom="40dp"
+        android:text="Send Location Request Via.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/mainlayout1"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/internet_forqst"
+            android:textSize="20dp"
+            android:text="Internet"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/ans_question_background"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/sms_rqst"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:text="sms"
+            android:textColor="#fff"
+            android:background="@drawable/ans_question_background"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+       android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+
+        android:text="Make your Device Online in both case your friend may response online"
+        android:textColor="#ece75c"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
